@@ -1,6 +1,6 @@
 # CVBackbones-imagenet-no-pretrained
 
-classic CV backbones for imagenet without pretrained based on pytorch
+classic CV backbones for imagenet without pretrained based on pytorch.
 
 ## Models
 
@@ -62,7 +62,7 @@ efficientnetb7
 TODO means means the model.py is designed for cifar10/100 but imagenet.
 
 ## Acknowledgment
-https://github.com/weiaicunzai/pytorch-cifar100 \\
+https://github.com/weiaicunzai/pytorch-cifar100  
 https://github.com/narumiruna/efficientnet-pytorch
 
 
