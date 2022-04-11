@@ -191,6 +191,18 @@ def get_network(args):
     elif args.net == 'efficientnetb7':
         from models.efficientnet import efficientnet_b7
         net = efficientnet_b7()
+    elif args.net == 'efficientnetv2_s':
+        from models.efficientnetv2 import effnetv2_s
+        net = effnetv2_s()
+    elif args.net == 'efficientnetv2_m':
+        from models.efficientnetv2 import effnetv2_m
+        net = effnetv2_m()
+    elif args.net == 'efficientnetv2_l':
+        from models.efficientnetv2 import effnetv2_l
+        net = effnetv2_l()
+    elif args.net == 'efficientnetv2_xl':
+        from models.efficientnetv2 import effnetv2_xl
+        net = effnetv2_xl()
     else:
         print('the network name you have entered is not supported yet')
         sys.exit()
