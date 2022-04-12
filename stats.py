@@ -16,15 +16,15 @@ def main():
     cudnn.benchmark = True
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-net', type=str, default='efficientnetb7', help='net type')
+    parser.add_argument('-net', type=str, default='vit', help='net type')
     args = parser.parse_args()
     args.gpu = False
 
     model = get_network(args)
 
-    stat(model, (3,224,224))
+    stat(model, (3,256,256))
 
-    # input = torch.randn(1, 3, 224, 224)
+    # input = torch.randn(1, 3, 256, 256)
     # flops, params = profile(model, inputs=(input, ))
     # flops, params = clever_format([flops, params], "%.3f")
     # print('flops:', flops)

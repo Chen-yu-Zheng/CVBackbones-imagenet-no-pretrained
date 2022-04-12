@@ -203,6 +203,9 @@ def get_network(args):
     elif args.net == 'efficientnetv2_xl':
         from models.efficientnetv2 import effnetv2_xl
         net = effnetv2_xl()
+    elif args.net == 'vit':
+        from models.vit import vit
+        net = vit()
     else:
         print('the network name you have entered is not supported yet')
         sys.exit()
